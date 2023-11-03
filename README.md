@@ -24,10 +24,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create 2 virtual machines (Domain controller and Client-1)
+- Install active directory on Domain controller and join domain from client-1 to domain controller
+- Create a folders to share to the network 
+- DNS
 
 <h2>Deployment and Configuration Steps</h2>
 
