@@ -33,7 +33,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab1.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab2.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab2a.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Created the Domain Controller VM (Windows Server 2022) named “DC-1” and created the Client VM (Windows 10) named “Client-1”. I then Set the Domain Controller’s NIC Private IP address to be static. Ensure that both VMs are in the same Vnet (checked by the topology with Network Watcher)
@@ -43,7 +45,9 @@ Created the Domain Controller VM (Windows Server 2022) named “DC-1” and crea
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab3.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab7.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab8.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Login to DC-1 and install Active Directory Domain Services. Promote as a DC: Setup a new forest as mydomain.com. Restart and then log back into DC-1 as user: mydomain.com\labuser From the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address
@@ -53,7 +57,9 @@ From the Azure Portal, restart Client-1. Login to Client-1 (Remote Desktop) as t
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab4.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab5.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab6.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”
@@ -64,7 +70,7 @@ User jane_admin as my admin account.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/kleeloy/config-ad/blob/main/Diagrams/ADLab10.png" height="30%" width="30%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Logged into Client-1 as mydomain.com\jane_admin and open system properties. Clicked “Remote Desktop”. Allowed “domain users” access to remote desktop
